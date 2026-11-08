@@ -1,0 +1,10 @@
+# Starting list. After your successful run on Colab, REPLACE this file with the output of:  pip freeze > requirements.txt
+numpy
+pandas
+scipy
+scikit-learn
+xgboost
+mne
+pygsp
+matplotlib
+awscli
