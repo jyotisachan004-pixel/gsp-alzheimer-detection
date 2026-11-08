@@ -24,8 +24,8 @@ ax.bar(x + w/2, df["mean_acc"], w, yerr=df["std_acc"].fillna(0), capsize=2, labe
        color=C_MINE, edgecolor="black", hatch="...", linewidth=0.5, error_kw={"elinewidth": 0.8})
 if "mean_majority" in df:
     ax.axhline(df["mean_majority"].mean(), color="black", linestyle="--", linewidth=0.8, label="Majority-class baseline")
-ax.set_xticks(x); ax.set_xticklabels([m.replace(" ", "\n") for m in df["model"]])
+ax.set_xticks(x); ax.set_xticklabels(df["model"], rotation=30, ha="right")
 ax.set_ylabel("Test accuracy (fraction)"); ax.set_ylim(0, 1.0)
-ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.30), ncol=1, frameon=False)
+ax.legend(loc="upper center", bbox_to_anchor=(-0.30 to -0.55), ncol=1, frameon=False)
 plt.savefig(OUT, bbox_inches="tight")
 print("saved", OUT)
