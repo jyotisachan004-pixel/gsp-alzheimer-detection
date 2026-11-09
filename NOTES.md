@@ -25,3 +25,8 @@
 
 ## D. Reductions
 First 1000 time bins per recording; smaller hyper-parameter grids for kNN, Random Forest and XGBoost; 3 seeds; TabTransformer not run. Run times were not recorded.
+
+## E. Fresh-clone test (9 Nov 2026)
+- Problem: following the README on a new Colab notebook, `pip install -r requirements.txt` failed with an OSError for `google_colab-1.0.0.tar.gz`. The file was a full `pip freeze` from my first Colab session, which includes Colab's own packages, so it cannot be installed on a fresh runtime.
+- Fix: renamed the full list to `requirements-freeze.txt` (kept as a record of the exact versions) and added a short installable `requirements.txt` (numpy, pandas, scipy, scikit-learn, xgboost, mne, pygsp, matplotlib, awscli).
+- Outcome: after the fix, the install finished (pip printed warnings about Colab's preinstalled packages, not about this project). Download, feature extraction, models and figure ran from the README alone, and the results matched the first run (SVM mean accuracy 0.728, Random Forest 0.679, majority baseline 0.728).
