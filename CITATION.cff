@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this reproduction, please cite it and the original paper."
+title: "Reproduction of Mootoo et al. (2023): Detecting Alzheimer Disease in EEG Data with Machine Learning and the Graph Discrete Fourier Transform"
+version: 1.0.0
+date-released: "2026-11-09"
+authors:
+  - family-names: "Sachan"
+    given-names: "Jyoti"
+    orcid: "https://orcid.org/0009-0003-5090-6193"
+repository-code: "https://github.com/jyotisachan004-pixel/gsp-alzheimer-detection"
+references:
+  - type: article
+    title: "Detecting Alzheimer Disease in EEG Data with Machine Learning and the Graph Discrete Fourier Transform"
+    authors:
+      - family-names: "Mootoo"
+        given-names: "Xavier S."
+      - family-names: "Fours"
+        given-names: "Alice"
+      - family-names: "Dinesh"
+        given-names: "Chinthaka"
+      - family-names: "Ashkani"
+        given-names: "Mohammad"
+      - family-names: "Kiss"
+        given-names: "Adam"
+      - family-names: "Faltyn"
+        given-names: "Mateusz"
+    journal: "medRxiv (preprint, not peer reviewed)"
+    year: 2023
+    doi: "10.1101/2023.11.01.23297940"
